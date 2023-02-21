@@ -1,0 +1,30 @@
+{
+  "name": "observable-storage",
+  "version": "0.1.0",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/observable-storage.umd.cjs",
+  "module": "./dist/observable-storage.js",
+  "exports": {
+    ".": {
+      "import": "./dist/observable-storage.js",
+      "require": "./dist/observable-storage.umd.cjs"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "jsdom": "^21.1.0",
+    "lowdb": "^5.1.0",
+    "typescript": "^4.9.3",
+    "vite": "^4.1.0",
+    "vite-plugin-dts": "2.0.0-beta.2",
+    "vitest": "^0.28.5"
+  }
+}
